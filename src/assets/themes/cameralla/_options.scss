@@ -1,0 +1,39 @@
+.check{
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  input[type=checkbox], input[type=radio]{
+    display: none;
+  }
+  &:before, &:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+  }
+  &:before{
+    border: solid 1px #ddd;
+  }
+  &[type=checkbox]{
+    &:before{
+      border-radius: 4px;
+    }
+  }
+  &[type=radio]{
+    &:before{
+      border-radius: 50%;
+    }
+  }
+  &[type=switcher]{
+    &:before{
+      border-radius: 4px;
+      width: 32px;
+      height: 8px;
+    }
+    &:after{
+      border-radius: 50%;
+      background: orangered;
+      position: absolute;
+    }
+  }
+}

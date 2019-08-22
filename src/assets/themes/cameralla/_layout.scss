@@ -1,0 +1,58 @@
+header{}
+main{
+  margin-left: 260px;
+  border: solid 1px #ddd;
+}
+
+.aside{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  z-index: 999;
+  &.primary{
+    left:0;
+    background: #2c323f;
+    width: 260px;
+  }
+  &.secondary{
+    right: -100%;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .2);
+    background: white;
+    width: 300px;
+    z-index: 99999999;
+    transition: all .3s ease-in-out;
+    label{
+      text-transform: uppercase;
+      color: #B0BAC9;
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  height: 52px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 1px #ddd;
+  z-index: 999999;
+}
+
+.color{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  + .color{
+    margin-left: 8px;
+
+  }
+}
+.aside-secondary-toogle{
+  .secondary{
+    right: 0px;
+  }
+}

@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
+const selector = 'body'
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: selector,
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'uix';
+    title = 'uix';
 }
